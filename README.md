@@ -1,4 +1,4 @@
-## Sample NodeJS server links with Cloudflare tunnel 
+## Link the local NodeJS server with Cloudflare tunnel and open to the world
 
 install cloudflare tunnel
 ```shell
