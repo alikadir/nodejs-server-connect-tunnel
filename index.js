@@ -8,6 +8,6 @@ app.get("/", (req, res) => {
   res.send(stringify(req));
 });
 
-const listener = app.listen(process.env.PORT || 8080, () => {
+const listener = app.listen(process.env.PORT || 3000, () => {
   console.log(`server run ${listener.address().port} port.`);
 });
