@@ -1,4 +1,4 @@
-## Sample NodeJS Server links with Cloudflare Tunnel 
+## Sample NodeJS server links with Cloudflare tunnel 
 
 install cloudflare tunnel
 ```shell
