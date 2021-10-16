@@ -1,5 +1,5 @@
 {
-  "name": "node-server-cloudflare-tunnel",
+  "name": "nodejs-server-cloudflare-tunnel",
   "version": "1.0.0",
   "description": "",
   "type": "module",
