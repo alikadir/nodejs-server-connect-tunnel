@@ -1,15 +1,16 @@
 ## Link the local NodeJS server with Cloudflare tunnel and open to the world
 
-install cloudflare tunnel
+install cloudflare tunnel for MacOS
 ```shell
 $ brew install cloudflare/cloudflare/cloudflared
 ```
+for [other OS ](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation)
 
 and then link it local nodejs server
 ```shell
 $ cloudflared tunnel --url http://localhost:3000
 ```
-
+**the tunnel connect automatically again when restart or crash nodejs app**
 ```shell
 cloudflared tunnel --url http://localhost:3000
 2021-07-15T20:11:29Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
