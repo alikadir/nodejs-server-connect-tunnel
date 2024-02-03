@@ -1,4 +1,6 @@
-## Link the local NodeJS server with a tunnel and open to the world
+# Link the local NodeJS server with a tunnel and open to the world
+
+## Cloudflare tunnel
 
 install cloudflare tunnel for MacOS
 ```shell
@@ -30,3 +32,45 @@ cloudflared tunnel --url http://localhost:3000
 ```
 
 https://developers.cloudflare.com/pages/how-to/preview-with-cloudflare-tunnel
+
+
+## Localtunnel (npm)
+
+install and run 
+```shell
+$ npx localtunnel --port 3000
+your url is: https://afraid-rooms-agree.loca.lt
+```
+
+**to generate same domain name everytime, set --subdomain parameter (unlimited static domain)**
+```shell
+$ npx localtunnel --port 3000 --subdomain aliveli
+your url is: https://aliveli.loca.lt
+```
+
+## Ngrok
+install ngrok for MacOS
+```shell
+$ brew install ngrok/ngrok/ngrok
+```
+
+configure authentication token 
+```shell
+$ ngrok config add-authtoken 1WW8ez*****
+```
+
+use 
+``` shell
+$ ngrok http 3000
+```
+
+**to generate same domain name everytime (but we can link only one static domain for free plan)**
+
+[to create random static domain](https://dashboard.ngrok.com/cloud-edge/domains)
+
+_positively-clean-dory.ngrok-free.app_ is my random static domain
+
+```shell
+$ ngrok http --domain=positively-clean-dory.ngrok-free.app 3000
+```
+
