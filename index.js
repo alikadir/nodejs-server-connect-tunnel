@@ -3,6 +3,12 @@ import stringify from "json-stringify-safe";
 
 const app = express();
 
+app.get("/error", (req, res) => {
+  throw Error("upss");
+  res.contentType("application/json");
+  res.send(stringify(req));
+});
+
 app.get("/", (req, res) => {
   res.contentType("application/json");
   res.send(stringify(req));
