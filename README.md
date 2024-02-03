@@ -42,7 +42,7 @@ $ npx localtunnel --port 3000
 your url is: https://afraid-rooms-agree.loca.lt
 ```
 
-**to generate same domain name everytime, set --subdomain parameter (static domain)**
+**to generate same domain name everytime, set --subdomain parameter (unlimited static domain)**
 ```shell
 $ npx localtunnel --port 3000 --subdomain aliveli
 your url is: https://aliveli.loca.lt
