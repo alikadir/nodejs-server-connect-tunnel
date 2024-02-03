@@ -1,4 +1,4 @@
-## Link the local NodeJS server with Cloudflare tunnel and open to the world
+## Link the local NodeJS server with a tunnel and open to the world
 
 install cloudflare tunnel for MacOS
 ```shell
